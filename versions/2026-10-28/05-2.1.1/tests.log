@@ -1,0 +1,148 @@
+test_account_switch_refused_during_learning (test_desktop.BackendTests.test_account_switch_refused_during_learning) ... ok
+test_canceled_qr_preserves_existing_session (test_desktop.BackendTests.test_canceled_qr_preserves_existing_session) ... ok
+test_quiz_scan_advances_past_chapters_with_no_quiz (test_desktop.BackendTests.test_quiz_scan_advances_past_chapters_with_no_quiz) ... ok
+test_resource_links_reject_non_web_schemes (test_desktop.BackendTests.test_resource_links_reject_non_web_schemes) ... ok
+test_status_keeps_legacy_completed_state_non_resumable (test_desktop.BackendTests.test_status_keeps_legacy_completed_state_non_resumable) ... ok
+test_status_marks_incomplete_stopped_state_resumable (test_desktop.BackendTests.test_status_marks_incomplete_stopped_state_resumable) ... ok
+test_status_tolerates_corrupt_progress_fields (test_desktop.BackendTests.test_status_tolerates_corrupt_progress_fields) ... ok
+test_status_turns_dead_process_into_resumable_state (test_desktop.BackendTests.test_status_turns_dead_process_into_resumable_state) ... ok
+test_auto_refresh_runs_in_background_and_preserves_selection (test_desktop.DesktopTests.test_auto_refresh_runs_in_background_and_preserves_selection) ... ok
+test_auto_refresh_skips_busy_operation (test_desktop.DesktopTests.test_auto_refresh_skips_busy_operation) ... ok
+test_auto_refresh_skips_running_study (test_desktop.DesktopTests.test_auto_refresh_skips_running_study) ... ok
+test_close_handles_status_read_failure (test_desktop.DesktopTests.test_close_handles_status_read_failure) ... 关闭时读取学习状态失败
+Traceback (most recent call last):
+  File "C:\Users\XWC\Documents\Codex\2026-10-28\microyume-superstar-checker-vibe-codeing-mcp-3\outputs\desktop-source\desktop.py", line 1215, in close
+    state = self.backend.status()
+  File "C:\Users\XWC\AppData\Local\Programs\Python\Python314\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\XWC\AppData\Local\Programs\Python\Python314\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\XWC\AppData\Local\Programs\Python\Python314\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+RuntimeError: state unavailable
+ok
+test_close_handles_stop_failure_with_force_exit (test_desktop.DesktopTests.test_close_handles_stop_failure_with_force_exit) ... 关闭时请求停止学习失败
+Traceback (most recent call last):
+  File "C:\Users\XWC\Documents\Codex\2026-10-28\microyume-superstar-checker-vibe-codeing-mcp-3\outputs\desktop-source\desktop.py", line 1225, in close
+    self.backend.stop()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\XWC\AppData\Local\Programs\Python\Python314\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\XWC\AppData\Local\Programs\Python\Python314\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\XWC\AppData\Local\Programs\Python\Python314\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+RuntimeError: stop unavailable
+ok
+test_corrupt_settings_are_backed_up_and_reset (test_desktop.DesktopTests.test_corrupt_settings_are_backed_up_and_reset) ... 桌面设置文件损坏，已备份到 C:\Users\XWC\AppData\Local\Temp\tmp3srvwsbd\desktop-settings.corrupt-20261028-230903.json
+ok
+test_course_switch_discards_late_network_result (test_desktop.DesktopTests.test_course_switch_discards_late_network_result) ... ok
+test_network_runs_off_ui_thread_and_callback_on_ui_thread (test_desktop.DesktopTests.test_network_runs_off_ui_thread_and_callback_on_ui_thread) ... ok
+test_non_transient_failures_are_not_retried (test_desktop.DesktopTests.test_non_transient_failures_are_not_retried) ... 不可重试检查失败
+Traceback (most recent call last):
+  File "C:\Users\XWC\Documents\Codex\2026-10-28\microyume-superstar-checker-vibe-codeing-mcp-3\outputs\desktop-source\desktop.py", line 449, in worker
+    data = function()
+  File "C:\Users\XWC\Documents\Codex\2026-10-28\microyume-superstar-checker-vibe-codeing-mcp-3\outputs\desktop-source\test_desktop.py", line 127, in failed
+    raise error
+superstar_checker.client.CaptchaRequired: 触发超星风控验证码，请稍后再试或降低频率（可先在手机/网页端登录一次再试）：test
+不可重试检查失败
+Traceback (most recent call last):
+  File "C:\Users\XWC\Documents\Codex\2026-10-28\microyume-superstar-checker-vibe-codeing-mcp-3\outputs\desktop-source\desktop.py", line 449, in worker
+    data = function()
+  File "C:\Users\XWC\Documents\Codex\2026-10-28\microyume-superstar-checker-vibe-codeing-mcp-3\outputs\desktop-source\test_desktop.py", line 127, in failed
+    raise error
+superstar_checker.client.ChaoxingError: 业务错误
+不可重试检查失败
+Traceback (most recent call last):
+  File "C:\Users\XWC\Documents\Codex\2026-10-28\microyume-superstar-checker-vibe-codeing-mcp-3\outputs\desktop-source\desktop.py", line 449, in worker
+    data = function()
+  File "C:\Users\XWC\Documents\Codex\2026-10-28\microyume-superstar-checker-vibe-codeing-mcp-3\outputs\desktop-source\test_desktop.py", line 127, in failed
+    raise error
+ValueError: 解析错误
+ok
+test_refresh_interval_is_saved (test_desktop.DesktopTests.test_refresh_interval_is_saved) ... ok
+test_resume_candidate_requires_matching_existing_course (test_desktop.DesktopTests.test_resume_candidate_requires_matching_existing_course) ... ok
+test_resume_only_starts_after_button_click (test_desktop.DesktopTests.test_resume_only_starts_after_button_click) ... ok
+test_retry_repeats_transient_failure_in_background (test_desktop.DesktopTests.test_retry_repeats_transient_failure_in_background) ... 重试检查失败，将在后台重试（第 1 次）: temporary network error
+ok
+test_same_course_different_class_selection_survives_refresh (test_desktop.DesktopTests.test_same_course_different_class_selection_survives_refresh) ... ok
+test_search_no_results_clears_selected_course (test_desktop.DesktopTests.test_search_no_results_clears_selected_course) ... ok
+test_settings_are_saved_atomically_with_selection (test_desktop.DesktopTests.test_settings_are_saved_atomically_with_selection) ... ok
+test_stop_remains_available_while_query_is_busy (test_desktop.DesktopTests.test_stop_remains_available_while_query_is_busy) ... ok
+test_transient_failures_are_limited_to_requested_retries (test_desktop.DesktopTests.test_transient_failures_are_limited_to_requested_retries) ... 限次检查失败，将在后台重试（第 1 次）: temporary network error
+限次检查失败，将在后台重试（第 2 次）: temporary network error
+限次检查失败
+Traceback (most recent call last):
+  File "C:\Users\XWC\Documents\Codex\2026-10-28\microyume-superstar-checker-vibe-codeing-mcp-3\outputs\desktop-source\desktop.py", line 449, in worker
+    data = function()
+  File "C:\Users\XWC\Documents\Codex\2026-10-28\microyume-superstar-checker-vibe-codeing-mcp-3\outputs\desktop-source\test_desktop.py", line 138, in failed
+    raise httpx.ConnectTimeout("temporary network error")
+httpx.ConnectTimeout: temporary network error
+ok
+test_wait_to_close_handles_status_read_failure (test_desktop.DesktopTests.test_wait_to_close_handles_status_read_failure) ... 等待关闭时读取学习状态失败
+Traceback (most recent call last):
+  File "C:\Users\XWC\Documents\Codex\2026-10-28\microyume-superstar-checker-vibe-codeing-mcp-3\outputs\desktop-source\desktop.py", line 1238, in _wait_to_close
+    running = self.backend.status().get("running")
+              ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\XWC\AppData\Local\Programs\Python\Python314\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\XWC\AppData\Local\Programs\Python\Python314\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\XWC\AppData\Local\Programs\Python\Python314\Lib\unittest\mock.py", line 1234, in _execute_mock_call
+    raise effect
+RuntimeError: state unavailable
+ok
+test_windows_notification_can_be_disabled (test_desktop.DesktopTests.test_windows_notification_can_be_disabled) ... ok
+test_windows_notification_is_deduplicated (test_desktop.DesktopTests.test_windows_notification_is_deduplicated) ... ok
+test_backoff_shares_deadline (test_fixes.AsyncRefreshTests.test_backoff_shares_deadline) ... ok
+test_business_expiry_and_403_are_not_retried (test_fixes.AsyncRefreshTests.test_business_expiry_and_403_are_not_retried) ... ok
+test_cancel_during_backoff_stops_retry (test_fixes.AsyncRefreshTests.test_cancel_during_backoff_stops_retry) ... ok
+test_cancel_during_request (test_fixes.AsyncRefreshTests.test_cancel_during_request) ... ok
+test_network_failure_retries_at_most_twice (test_fixes.AsyncRefreshTests.test_network_failure_retries_at_most_twice) ... ok
+test_redirects_share_deadline (test_fixes.AsyncRefreshTests.test_redirects_share_deadline) ... ok
+test_slow_response_is_cancelled_by_total_deadline (test_fixes.AsyncRefreshTests.test_slow_response_is_cancelled_by_total_deadline) ... ok
+test_success_parses_in_isolated_session (test_fixes.AsyncRefreshTests.test_success_parses_in_isolated_session) ... ok
+test_untrusted_redirect_is_rejected (test_fixes.AsyncRefreshTests.test_untrusted_redirect_is_rejected) ... ok
+test_failed_build_retains_logs_and_existing_release (test_fixes.ReleaseTests.test_failed_build_retains_logs_and_existing_release) ... Failed build retained: C:\Users\XWC\AppData\Local\Temp\tmp24t2e354\outputs\release\.failed\2.1.1\20261028-230912-897034
+ok
+test_full_pipeline_repeated_build_and_failed_build_preserve_history (test_fixes.ReleaseTests.test_full_pipeline_repeated_build_and_failed_build_preserve_history) ... C:\Users\XWC\AppData\Local\Temp\tmpub2o8cf5\outputs\release\2.1.1\20261028-230912-916924
+C:\Users\XWC\AppData\Local\Temp\tmpub2o8cf5\outputs\release\2.1.1\20261028-230912-937215
+Failed build retained: C:\Users\XWC\AppData\Local\Temp\tmpub2o8cf5\outputs\release\.failed\2.1.1\20261028-230912-959620
+ok
+test_repeated_publish_and_unique_stage_preserve_history (test_fixes.ReleaseTests.test_repeated_publish_and_unique_stage_preserve_history) ... ok
+test_snapshot_excludes_personal_sessions_and_build_cache (test_fixes.ReleaseTests.test_snapshot_excludes_personal_sessions_and_build_cache) ... ok
+test_version_resource_is_generated_from_single_source (test_fixes.ReleaseTests.test_version_resource_is_generated_from_single_source) ... ok
+test_cancelled_before_start_does_not_read_session (test_fixes.StatusFixTests.test_cancelled_before_start_does_not_read_session) ... ok
+test_failed_chapter_is_resumable (test_fixes.StatusFixTests.test_failed_chapter_is_resumable) ... ok
+test_last_chapter_stopped_is_resumable (test_fixes.StatusFixTests.test_last_chapter_stopped_is_resumable) ... ok
+test_legacy_pending_list_is_supported (test_fixes.StatusFixTests.test_legacy_pending_list_is_supported) ... ok
+test_manual_and_unsupported_do_not_create_resume_loop (test_fixes.StatusFixTests.test_manual_and_unsupported_do_not_create_resume_loop) ... ok
+test_normal_completion_is_not_resumable (test_fixes.StatusFixTests.test_normal_completion_is_not_resumable) ... ok
+test_refresh_discards_result_after_account_changes (test_fixes.StatusFixTests.test_refresh_discards_result_after_account_changes) ... ok
+test_refresh_uses_default_35_second_budget_and_independent_cookies (test_fixes.StatusFixTests.test_refresh_uses_default_35_second_budget_and_independent_cookies) ... ok
+test_scan_exception_is_resumable_with_no_pending_count (test_fixes.StatusFixTests.test_scan_exception_is_resumable_with_no_pending_count) ... ok
+test_auto_refresh_slow_backend_keeps_ui_responsive (test_fixes.UIFixTests.test_auto_refresh_slow_backend_keeps_ui_responsive) ... ok
+test_blocked_deadline_catches_up_once (test_fixes.UIFixTests.test_blocked_deadline_catches_up_once) ... ok
+test_cancelled_refresh_is_not_failure (test_fixes.UIFixTests.test_cancelled_refresh_is_not_failure) ... ok
+test_disabling_refresh_signals_cancel (test_fixes.UIFixTests.test_disabling_refresh_signals_cancel) ... ok
+test_failed_refresh_resets_at_finish (test_fixes.UIFixTests.test_failed_refresh_resets_at_finish) ... ok
+test_interval_and_reenable_reset_single_deadline (test_fixes.UIFixTests.test_interval_and_reenable_reset_single_deadline) ... ok
+test_login_success_rearms_expiry_notification (test_fixes.UIFixTests.test_login_success_rearms_expiry_notification) ... ok
+test_logout_reason_and_retry_delay (test_fixes.UIFixTests.test_logout_reason_and_retry_delay) ... ok
+test_notifications_rearm_after_refresh_recovery (test_fixes.UIFixTests.test_notifications_rearm_after_refresh_recovery) ... ok
+test_refresh_duration_resets_at_finish (test_fixes.UIFixTests.test_refresh_duration_resets_at_finish) ... ok
+test_resume_clears_filter_and_selects_hidden_course (test_fixes.UIFixTests.test_resume_clears_filter_and_selects_hidden_course) ... ok
+test_resume_rechecks_deleted_course (test_fixes.UIFixTests.test_resume_rechecks_deleted_course) ... ok
+test_resume_rechecks_running_task (test_fixes.UIFixTests.test_resume_rechecks_running_task) ... ok
+test_stopped_task_never_announces_complete (test_fixes.UIFixTests.test_stopped_task_never_announces_complete) ... ok
+
+----------------------------------------------------------------------
+Ran 66 tests in 12.956s
+
+OK

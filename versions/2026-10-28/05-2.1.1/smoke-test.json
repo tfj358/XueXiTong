@@ -1,0 +1,9 @@
+{
+  "app_version": "2.1.1",
+  "frozen": true,
+  "mock_backend": true,
+  "course_count": 1,
+  "window_visible": true,
+  "errors": [],
+  "closed": true
+}

@@ -1,0 +1,12 @@
+{
+  "app_version": "2.1.0",
+  "frozen": true,
+  "python": "3.14.0",
+  "tk": "8.6.15",
+  "aes_ok": true,
+  "des_ok": true,
+  "notifications_ok": true,
+  "font_table_entries": 30884,
+  "has_session": true,
+  "course_count": 47
+}

@@ -1,0 +1,51 @@
+{
+  "project": "学习通助手",
+  "generated_at": "2026-10-29",
+  "entries": [
+    {
+      "order": 1,
+      "date": "2026-10-28 13:13",
+      "name": "auto-refresh",
+      "path": "versions/2026-10-28/01-auto-refresh",
+      "notes": "自动刷新早期版本；保留原始 EXE 与安装检查报告。"
+    },
+    {
+      "order": 2,
+      "date": "2026-10-28 15:36",
+      "name": "enhanced-v2-series",
+      "path": "versions/2026-10-28/02-enhanced-v2-series",
+      "notes": "增强版 v2 系列。"
+    },
+    {
+      "order": 3,
+      "date": "2026-10-28 20:23",
+      "name": "v2.0.0",
+      "path": "versions/2026-10-28/03-v2.0.0",
+      "notes": "带 Windows 版本资源的 2.0.0 版本。"
+    },
+    {
+      "order": 4,
+      "date": "2026-10-28 22:00",
+      "name": "2.1.0",
+      "path": "versions/2026-10-28/04-2.1.0",
+      "notes": "完整发布归档，含 EXE、说明、检查报告、SHA256 与第三方声明。"
+    },
+    {
+      "order": 5,
+      "date": "2026-10-28 23:09",
+      "name": "2.1.1",
+      "path": "versions/2026-10-28/05-2.1.1",
+      "notes": "最终通过验证的独立归档；含源码快照、构建与测试日志、安装检查、窗口自检、版本检查和 SHA256。"
+    }
+  ],
+  "excluded": [
+    ".venv",
+    "__pycache__",
+    "*.pyc",
+    "session.json",
+    "desktop-settings.json",
+    "study_state.json",
+    "study_stop.flag",
+    "desktop.log"
+  ]
+}

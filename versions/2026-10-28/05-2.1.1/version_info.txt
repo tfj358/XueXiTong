@@ -1,0 +1,7 @@
+VSVersionInfo(ffi=FixedFileInfo(filevers=(2, 1, 1, 0), prodvers=(2, 1, 1, 0), mask=0x3f, flags=0, OS=0x40004, fileType=1, subtype=0, date=(0,0)), kids=[StringFileInfo([StringTable('080404b0', [StringStruct('CompanyName', 'MicroYume'),
+StringStruct('FileDescription', '学习通助手桌面版'),
+StringStruct('FileVersion', '2.1.1.0'),
+StringStruct('InternalName', '学习通助手'),
+StringStruct('OriginalFilename', '学习通助手-增强版-v2.1.1.exe'),
+StringStruct('ProductName', '学习通助手'),
+StringStruct('ProductVersion', '2.1.1')])]), VarFileInfo([VarStruct('Translation', [2052,1200])])])

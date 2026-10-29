@@ -1,0 +1,24 @@
+test_chapters ok
+test_cookie_conflict ok
+test_crypto ok
+test_enc_formula ok
+test_job_response_business_status ok
+test_login_switch_confirmation ok
+test_login_switch_confirmation_skips_when_logged_out ok
+test_marg ok
+test_marg_preserves_spaces ok
+test_native_qr_raster_is_square_and_preserves_modules ok
+test_notice_string_read_flag ok
+test_process_probe_does_not_stop_process ok
+test_qr_png_terminal_grid ok
+test_qr_rejects_json_as_image ok
+test_qr_scaled_png_collapses_to_modules ok
+test_session_reload ok
+test_stop_event_clear_resets_cache ok
+test_study_state_has_context ok
+test_terminal_qr_ascii_fallback_keeps_quiet_zone ok
+test_terminal_qr_compact_default_has_quiet_zone ok
+test_terminal_qr_compact_preserves_each_module ok
+test_work_caches_clear ok
+test_work_list ok
+ALL UNIT OK
